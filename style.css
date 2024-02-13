@@ -1,0 +1,248 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family1);
+}
+:root{
+    --font-family1:  "Inter", sans-serif;
+}
+.home{
+    width: 100%;
+    height: 90vh;
+    background-color: blue;
+}
+.img-1{
+    width: 99%;
+    height: 40vh;
+    margin-top: 50vh;
+    position: absolute;
+}
+.award{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.icon{
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+
+}
+.icon i{
+    border-radius: 50%;
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mail{
+    width: 70%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+}
+.tele{
+    font-size: 30px;
+    color: blue;
+    background-color: white;
+    margin-left: -50px;
+    margin-top: 5px;
+    position: absolute;
+}
+.read{
+    width: 200px;
+    margin: 0 auto;
+}
+.card:hover{
+    background-color: blue;
+    color: white;
+}
+.primg{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+}
+.pro{
+    width: 400px;
+    height: auto;
+}
+.show{
+    width: 300px;
+    height: 200px;
+    padding: 10px 20px;
+    border: solid rgb(255, 255, 255) 1px;
+    border-radius: 10px;
+}
+.carousel-item{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.team img{
+    width: 300px;
+    height: 400px;
+
+    margin-top: -50px;
+}
+.bg , .bg-1 , .bg-2{
+    width: 300px;
+    height: 500px;
+    background-color: rgb(243, 236, 236);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+   padding-top: 40px;
+   padding-left: 30px;
+}
+.bg i , .bg-1 i , .bg-2 i{
+    font-size: 20px;
+    color: blue;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg::after{
+    content: '';
+    position: absolute;
+    background-image: url(images/team-1.jpg);
+    width: 300px;
+    height: 450px;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: -50px;
+    left: 100px;
+}
+.bg-1::after{
+    content: '';
+    position: absolute;
+    background-image: url(images/team-2.jpg);
+    width: 300px;
+    height: 450px;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: -50px;
+    left: 100px;
+}
+.bg-2::after{
+    content: '';
+    position: absolute;
+    background-image: url(images/team-3.jpg);
+    width: 300px;
+    height: 450px;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: -50px;
+    left: 100px;
+}
+.bg:hover{
+    background-color: blue;
+    color: white;
+}
+.bg-1:hover{
+    background-color: blue;
+    color: white;
+}
+.bg-2:hover{
+    background-color: blue;
+    color: white;
+}
+.bg:hover.bg i{
+    color: blue;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: .5s inherit;
+}
+.gall img{
+    width: 50px;
+    height: 50px;
+}
+span{
+    text-decoration: underline;
+}
+.foot{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot li{
+    list-style-type: none;
+    margin: 0 30px;
+}
+.foot li::after{
+    width: 2px;
+    height: 30px;
+    background-color: gray;
+    content: '';
+    margin-left: 10px;
+    position: absolute;
+}
+.foot li a{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+@media(max-width:600px){
+    .home{
+        width: 100%;
+        height: 80vh;
+    }
+    .img-1{
+        width: 97%;
+    }
+    .hero{
+        width: 100%;
+    }
+    .award{
+        width: 100%;
+    }
+    .icon{
+        margin-bottom: 20px;
+    }
+    .ab-img{
+        width: 100%;
+    }
+    .news{
+       display: none;
+    }
+    .primg{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .show{
+        width: 100%;
+        position: relative;
+        height: 200px;
+        padding: 10px 20px;
+        border: solid rgb(255, 255, 255) 1px;
+        border-radius: 10px;
+    }
+    .carousel-item{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: center;
+    }
+    .team{
+        margin: 40px auto;
+    }
+    .gall{
+        margin: 0 auto;
+    }
+}
